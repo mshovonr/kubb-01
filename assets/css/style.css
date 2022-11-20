@@ -12,7 +12,7 @@ img{
     width: 100%;
 }
 .border-light-css{
-    border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid rgb(111, 111, 111);
 }
 /* common style end */
 /* navbar start */
