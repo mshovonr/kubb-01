@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* common style start*/
 :root{
-    --brand-color: #28B7D7;
+    --brand-color: #28B8D8;
     --secondary-color: #154350;
     --text-color: #ccc;
     --white-color: #fff;
@@ -10,7 +10,9 @@
 }
 img{
     width: 100%;
-    
+}
+.border-light-css{
+    border-bottom: 1px solid #ccc;
 }
 /* common style end */
 /* navbar start */
@@ -24,10 +26,15 @@ img{
     font-size: 20px;
     font-weight: 600;
     color: var(--white-color);
+    transition: .5s;
+}
+.navbar-brand span:hover{
+    color: var(--brand-color);
 }
 .nav-item .nav-link{
+    padding-top: 10px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--white-color);
     margin: 0px 8px;    /*-- for link gap --*/
 }
@@ -37,6 +44,15 @@ img{
 .nav-item .nav-link.active{
     color: var(--brand-color);
 }
+.navbar-toggler{
+	color: rgba(66, 220, 255, 0.5);
+	border: 1px solid rgba(66, 220, 255, 0.9);
+}
+.navbar-toggler:focus {
+	text-decoration: none;
+    background-color: rgba(80, 223, 255, 0.4);
+	box-shadow: 0px 0px 0px 0.15rem;
+}
 /* navbar end */
 /* header start */
 .header-section{
@@ -44,17 +60,18 @@ img{
     background-size: cover;
 }
 .header-content{
-    padding: 240px 0px; /* for header area size */
+    padding: 250px 0px; /* for header area size */
 }
 .header-content h1{
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--white-color);
 }
-.header-content h2{
+.header-content p{
     font-size: 40px;
     font-weight: 400;
     color: var(--white-color);
+    margin: 0;
 }
 .header-content a{
     font-size: 14px;
@@ -76,7 +93,7 @@ img{
 }
     /* service heading start */
 .service-heading{
-    padding: 20px 0px;
+    padding: 25px 0px;
 }
 .service-heading h2{
     font-size: 32px;
@@ -90,34 +107,73 @@ img{
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     color: #666666;
-    padding: 4px 0px;
+    /* padding: 2px 0px; */
 }
     /* service heading end */
     /* service content start */
-.service-content{
+.service-area{
     padding: 20px 0px;
 }
 .service-text h3{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     color: #333333;
 }
-.service-area{
+.service-content{
     background-color: #fff;
     padding: 15px 15px 5px 15px;
     border: 2px solid #eaeaea;
+    transition: .4s;
 }
-.service-area a img{
+.service-content:hover{
+    box-shadow: 0px 5px 10px rgba(52, 52, 52, 0.44);
+}
+.service-content-img{
+    position: relative;
+    overflow: hidden;
+}
+.service-content-img img{
     width: 100%;
 }
-.service-area-text h4{
+.service-content-img-overlay{
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	right: 0%;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0,0.4);
+	transition: .4s all;
+	cursor: pointer;
+}
+.service-content-img:hover .service-content-img-overlay{
+	top: 0%;
+}
+.service-content-img-overlay .icon-button{
+    border: 1px solid var(--secondary-color);
+}
+.service-content-img-overlay i{
+	font-size: 32px;
+    margin-top: 24%;
+    padding: 12px 17px;
+    border-radius: 2.25rem;
+    border: 2px solid var(--text-color);
+	color: var(--text-color);
+    background-color: transparent;
+}
+.service-content-img-overlay i:hover{
+	color: var(--brand-color) !important;
+    border-color: var(--brand-color) !important;
+    background-color: rgba(0, 0, 0,0.25);
+}
+.service-content-text h4{
     font-size: 17px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     color: #333333;
 }
-.service-area-text p{
+.service-content-text p{
     font-size: 14px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
@@ -134,7 +190,7 @@ img{
     padding: 30px 0px 20px 0px;
 }
 .portfolio-name h3{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
@@ -174,31 +230,67 @@ img{
     margin: 0;
     padding: 0;
 }
-.journal-text{
+.journal-heading{
     padding: 20px 0px;
 }
-.journal-text h3{
-    font-size: 20px;
+.journal-heading h3{
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     color: #333333;
 }
 .journal-area{
     background-color: #fff;
-    padding: 15px 15px 5px 15px;
+    padding: 20px 0px 10px 0px;
     border: 2px solid #eaeaea;
+}
+.journal-area-heading{
+    padding: 5px 0px 10px 0px;
+}
+.journal-area-heading h3{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #444444;
+}
+.journal-area-heading .journal-date{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
 }
 .journal-area a img{
     width: 100%;
 }
-.journal-area-text h4{
-    font-size: 17px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    color: #333333;
+.journal-area-content{
+    padding: 20px 0px 0px 0px;
 }
-.journal-area-text p{
+.journal-area-content p{
     font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+}
+.journal-area-link{
+    padding-bottom: 25px;
+}
+.journal-area-link a{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #666666;
+}
+.journal-area-link a:hover{
+    color: var(--brand-color);
+}
+.journal-area-link a.icons{
+    font-size: 12px;
+    border: none !important;
+}
+.journal-area-link span{
+    font-size: 12px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     color: #666666;
@@ -209,13 +301,19 @@ img{
 .about-section{
     background-color: #f9f9f9;
 }
+.about-section .about-headline{
+    padding: 40px 0px 15px 0px;
+}
 .about-section h2{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
     color: #333333;
 }
     /* about self start */
+.about-self img{
+    width: 100%;
+}
 .about-self h5{
     font-size: 18px;
     font-weight: 500;
@@ -232,6 +330,7 @@ img{
     /* about self end */
     /* about service start */
 .about-service .about-service-image img{
+    width: 70%;
     text-decoration: none;
     background-color: transparent;
     padding: 6px;
@@ -253,9 +352,49 @@ img{
 }
     /* about service end */
 /* about end */
+/* form start */
+.form-section{
+    padding: 50px 0px;
+    background-color: #303030;
+}
+.register-form .register-heading{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.register-form .form-control{
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    padding: 0.55rem 0.75rem;
+    border-radius: 0.25rem;
+    color: var(--white-color);
+}
+.register-form .form-control::after{
+    border-color: var(--brand-color);
+}
+.register-form .btn{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin: 24px 0px 0px 0px;
+    padding: 10px 35px !important;
+    border: 1px solid var(--text-color);
+    border-radius: 0.25rem;
+    color: var(--text-color);
+    background-color: transparent;
+    transition: .6s;
+}
+.register-form .btn:hover{
+    border-color: var(--brand-color);
+    background-color: #393939;
+    color: var(--brand-color) !important;
+    }
+/* form end */
 /* contect start */
 .contact-section{
-    background-color: #373737;
+    background-color: #393939;
 }
 .contact-section h3{
     color: var(--white-color);
@@ -301,6 +440,7 @@ img{
 }
 .footer-content{
     color: var(--text-color);
+    font-size: 15px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
 }

@@ -1,0 +1,226 @@
+
+/* -------------------- container extra small start -------------------- */
+@media(min-width: 0px)  and (max-width: 575px){
+    /* header start */
+    .header-content h1{
+        font-size: 34px;
+    }
+    .header-content p{
+        font-size: 28px;
+    }
+    .header-content a{
+        font-size: 12px;
+    }
+    /* header end */
+    /* services start */
+    .service-text h3{
+    font-size: 17px;
+    }
+    .service-content-img-overlay i{
+        margin-top: 26%;
+    }
+    /* services end */
+    /* portfolio start */
+    .portfolio-link .btn{
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+    /* portfolio end */
+    /* journal start */
+    .journal-heading h3{
+        font-size: 20px;
+    }
+    /* journal end */
+    /* about start */
+    .about-self img{
+        width: 65%;
+    }
+    .about-self h5{
+        font-size: 16px;
+        text-align: justify;
+        padding: 15px 10px 0px 10px;
+    }
+    .about-self p{
+        font-size: 12px;
+        text-align: justify;
+        padding: 5px 10px 5px 10px;
+    }
+    .about-service .about-service-image img{
+        width: 80%;
+    }
+    /* about end */
+    /* contact start */     /* contact end */
+    /* footer start */
+    .footer-content{
+        font-size: 13px;
+        text-align: center;
+    }
+    /* footer end */
+}
+/* -------------------- container extra small end -------------------- */
+
+/* --------------------- container extra small && small start -------------------- */
+@media(min-width: 0px) and (max-width: 767px){
+    /* header start */
+    .header-content{
+        padding: 200px 0px;
+    }
+    /* header end */
+    /* service start */
+    .service-heading h2{
+        font-size: 24px;
+    }
+    .service-heading p{
+        font-size: 13px;
+    }
+    /* service end */
+    /* portfolio start */
+    .portfolio-name h3{
+        font-size: 19px;
+    }
+    /* portfolio end */
+    /* journal start */    /* journal end */    
+    /* about start */
+    .about-section h2{
+        font-size: 20px;
+    }
+    /* about end */
+    /* form start */    /* form end */  /* contact start */     /* contact end */      /* footer start */     /* footer end */
+}
+/* --------------------- container extra small && small end -------------------- */
+
+/* -------------------- container small start -------------------- */
+@media(min-width: 576px) and (max-width: 767px){
+    /* header start */
+    .header-content h1{
+        font-size: 40px;
+        /* margin: 3px; */
+    }
+    .header-content p{
+        font-size: 34px;
+    }
+    .header-content a{
+        font-size: 12px;
+    }
+    /* header end */
+    /* services start */
+    .service-text h3{
+        font-size: 20px;
+    }
+    .service-content-img-overlay i{
+        font-size: 24px;
+        margin-top: 21%;
+        padding: 11px 15px;
+    }
+    /* services end */
+    /* portfolio start */
+    .portfolio-link .btn{
+        padding: 12px 26px;
+        font-size: 14px;
+    }
+    /* portfolio end */
+    /* about start */
+    .about-self img{
+        width: 90%;
+    }
+    .about-self h5{
+        font-size: 17px;
+    }
+    .about-self p{
+        font-size: 13px;
+    }
+    /* about end */
+    /* form start */    /* form end */  /* contact start */ /* contact end */
+    /* footer start */
+    .footer-content{
+        font-size: 14px;
+    }
+    /* footer end */
+}
+/* -------------------- container small end -------------------- */
+
+/* --------------------- container medium start -------------------- */
+@media(min-width: 768px) and (max-width: 991px){
+    /* header start */
+    .header-content{
+        padding: 220px 0px;
+    }
+    .header-content h1{
+        font-size: 46px;
+    }
+    .header-content p{
+        font-size: 38px;
+    }
+    .header-content a{
+        font-size: 13px;
+    }
+    /* header end */
+    /* service start */
+    .service-heading h2{
+        font-size: 28px;
+    }
+    .service-content-img-overlay i{
+        font-size: 28px;
+        padding: 12px 17px;
+    }
+    /* service end */   /* portfolio start */   /* portfolio end */
+    /* about start */
+    .about-self img{
+        width: 75%;
+    }
+    .about-service .about-service-image img{
+        width: 50%;
+    }
+    /* about end */
+    /* form start */    /* form end */  /* contact start */ /* contact end */   /* footer start */  /* footer end */
+}
+/* --------------------- container medium end -------------------- */
+
+/* --------------------- container large start -------------------- */
+@media(min-width: 992px) and (max-width: 1199px){
+    /* header start */
+    .header-content{
+        padding: 240px 0px;
+    }
+    /* header end */
+    /* service start */
+    .service-content-img-overlay i{
+        margin-top: 23%;
+    }
+    /* service end */   /* portfolio start */   /* portfolio end */
+    /* about start */
+    .about-self h5{
+        font-size: 17px;
+    }
+    .about-self p{
+        font-size: 13px;
+    }
+    .about-service .about-service-image img{
+        width: 80%;
+    }
+    /* about end */
+    /* form start */    /* form end */  /* contact start */ /* contact end */   /* footer start */  /* footer end */
+}
+/* -------------------- container large end -------------------- */
+
+/* -------------------- container extra large -------------------- */
+@media (min-width: 1200px) and (max-width: 1399px){
+    /* header start */  /* header end */  /* service start */   /* service end */  /* portfolio start */   /* portfolio end */
+    /* about start */
+    .about-self img{
+        width: 88%;
+    }
+    /* about end */
+    /* form start */    /* form end */  /* contact start */ /* contact end */   /* footer start */  /* footer end */
+}
+/* -------------------- container extra large -------------------- */
+/* -------------------- container extra extra large start -------------------- */
+@media (min-width: 1400px){
+    /* header start */  /* header end */  /* service start */   /* service end */  /* portfolio start */   /* portfolio end */
+    /* about start */
+    .about-self img{
+        width: 68%;
+    }
+    /* about end */
+    /* form start */    /* form end */  /* contact start */ /* contact end */   /* footer start */  /* footer end */
+}
