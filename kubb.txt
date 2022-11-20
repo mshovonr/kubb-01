@@ -12,6 +12,7 @@
 # For demostration purpose.
 # It can also read, write & changeable.
 # W3 markup validation checked.
+# to view this demostration: https://shovon-kubb-01-demo.netlify.app/
 # see more on: https://github.com/mshovonr/
 
  
