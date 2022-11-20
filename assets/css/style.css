@@ -12,12 +12,13 @@ img{
     width: 100%;
 }
 .border-light-css{
-        border-bottom: 1px solid rgb(111, 111, 111);
+    border-bottom: 1px solid rgb(111, 111, 111);
 }
 /* common style end */
 /* navbar start */
 .navbar-section{
     background-color: rgba(49, 40, 56, .44);
+    padding-top: 13px;
 }
 .navbar-brand img{
     width: 34%;
@@ -45,12 +46,12 @@ img{
     color: var(--brand-color);
 }
 .navbar-toggler{
-	color: rgba(66, 220, 255, 0.5);
+	color: rgba(80, 223, 255, 0.5);
 	border: 1px solid rgba(66, 220, 255, 0.9);
 }
 .navbar-toggler:focus {
 	text-decoration: none;
-    background-color: rgba(80, 223, 255, 0.4);
+    background-color: rgba(150, 236, 255, 0.3);
 	box-shadow: 0px 0px 0px 0.15rem;
 }
 /* navbar end */
@@ -60,7 +61,7 @@ img{
     background-size: cover;
 }
 .header-content{
-    padding: 255px 0px; /* for header area size */
+    padding: 260px 0px; /* for header area size */
 }
 .header-content h1{
     font-size: 50px;
@@ -384,11 +385,11 @@ img{
     border-radius: 0.25rem;
     color: var(--text-color);
     background-color: transparent;
-    transition: .6s;
+    transition: .4s;
 }
 .register-form .btn:hover{
     border-color: var(--brand-color);
-    background-color: #393939;
+    background-color: #444444;
     color: var(--brand-color) !important;
     }
 /* form end */

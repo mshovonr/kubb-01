@@ -46,9 +46,16 @@
         padding: 5px 10px 5px 10px;
     }
     .about-service .about-service-image img{
-        width: 80%;
+        width: 100%;
     }
     /* about end */
+    /* form start */
+    .register-form .submit{
+        text-align: center !important;
+    }
+    .register-form .btn{
+        font-size: 14px;}
+    /* form end */
     /* contact start */     /* contact end */
     /* footer start */
     .footer-content{
